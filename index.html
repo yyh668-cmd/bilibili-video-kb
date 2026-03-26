@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gstack Demo</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="panel">
+      <p class="eyebrow">Demo Project</p>
+      <h1>Todo Capture</h1>
+      <p class="summary">A tiny page for trying gstack review and QA workflows.</p>
+
+      <form id="todo-form" class="composer">
+        <label class="sr-only" for="todo-input">Task</label>
+        <input id="todo-input" name="task" type="text" placeholder="Add a task">
+        <button type="submit">Add</button>
+      </form>
+
+      <p id="status" class="status" role="status" aria-live="polite">Ready</p>
+
+      <ul id="todo-list" class="todo-list">
+        <li>Read the gstack docs</li>
+        <li>Run a review</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
