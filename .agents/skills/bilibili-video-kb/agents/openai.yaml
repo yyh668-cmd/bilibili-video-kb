@@ -1,0 +1,4 @@
+interface:
+  display_name: "B站视频知识库"
+  short_description: "把 B 站链接整理成 Obsidian 笔记和 XMind 导图。"
+  default_prompt: "Use $bilibili-video-kb to process this Bilibili link into an Obsidian note and XMind map."

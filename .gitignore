@@ -1,0 +1,5 @@
+.venv-video-kb/
+.cache/video_kb/
+__pycache__/
+*.pyc
+

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "video-kb-automation"
+version = "0.1.0"
+description = "Bilibili-first video knowledge extraction pipeline for Obsidian."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "faster-whisper>=1.1.1",
+  "PyYAML>=6.0.2",
+  "xmind>=1.2.0",
+  "yt-dlp>=2025.2.19",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.5",
+]
+openai = [
+  "openai>=1.68.2",
+]
+full = [
+  "openai>=1.68.2",
+  "pytest>=8.3.5",
+]
+
+[project.scripts]
+video-kb = "video_kb.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
