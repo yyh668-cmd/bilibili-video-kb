@@ -42,8 +42,9 @@ The repository now contains a working Bilibili-to-Obsidian workflow that turns a
 - installed the same skill into `C:\Users\yy198\.codex\skills\bilibili-video-kb`
 - added a skill wrapper script that reuses the canonical setup/run entry points
 - validated the skill with `quick_validate.py` and a real Bilibili ingest run
-- staged the relevant files on branch `codex/bilibili-video-kb-skill`
-- hit a GitHub upload blocker: no configured git remote and no local git author identity
+- configured local git identity for this repo
+- connected remote `origin` to `https://github.com/yyh668-cmd/bilibili-video-kb.git`
+- committed the workflow and pushed it to `origin/master`
 
 ### 2026-04-20 Parallel Advisory: Control Agent
 

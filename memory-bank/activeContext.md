@@ -42,8 +42,9 @@ Later on 2026-04-20, the workflow was wrapped as a reusable skill:
 - local installed copy created at `C:\Users\yy198\.codex\skills\bilibili-video-kb`
 - helper script `run-video-kb.ps1` now resolves the repo root and reuses the canonical setup/run scripts
 - the skill was validated with `quick_validate.py` and exercised against the real `BV1Zk9FBwELs` link
-- a git branch `codex/bilibili-video-kb-skill` was created and the relevant files were staged
-- GitHub upload is currently blocked because this repo has no configured remote and Git has no `user.name` / `user.email`
+- git identity was configured locally for this repo
+- remote `origin` now points to `https://github.com/yyh668-cmd/bilibili-video-kb.git`
+- the repository has been committed and pushed to `origin/master`
 
 Current validated artifacts:
 
@@ -55,7 +56,6 @@ Current validated artifacts:
 
 - validate more real Bilibili knowledge videos
 - keep the new `bilibili-video-kb` skill in sync with the underlying pipeline
-- finish commit/push once the user provides remote and git identity
 - improve subtitle hit rate
 - improve extractive quality on non-Harness topics
 - tune XMind richness and styling against more topic families

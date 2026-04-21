@@ -30,6 +30,7 @@
 - added `pyproject.toml` and the `src/video_kb/` package
 - added `scripts/setup_video_kb.ps1`
 - added `scripts/run_video_kb.ps1`
+- added the reusable skill `.agents/skills/bilibili-video-kb`
 - implemented `video_kb.cli doctor`
 - implemented URL and local-media dual input
 - implemented Bilibili metadata extraction
